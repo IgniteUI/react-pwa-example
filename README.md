@@ -1,31 +1,53 @@
-# pwa
+React PWA Dashboard (Ignite UI)
+================================
 
-This project was generated with [App Builder Code Gen](https://www.appbuilder.dev/platform).
+Modern React PWA dashboard built with Ignite UI for React (data grid + pie chart), Vite, and React Router. The sample now includes a manifest, installable icons, and a cache-first service worker for basic offline support.
 
-## Development server
+What's inside
+-------------
+- React 19 + Vite 7 for fast HMR and optimized builds.
+- Ignite UI components (`IgrGrid`, `IgrPieChart`, `IgrNavbar`) rendering support ticket data from hooks.
+- React Router v7 layout with a support dashboard page.
+- TypeScript, ESLint, Vitest configuration baked in.
 
-Run `npm start` to build the application, start a web server and open the application in the default browser. The application will open in `http://localhost:3003/` by default.
+Quick start
+-----------
+1) Install dependencies  
+`npm install`
 
-## Build
+2) Run the dev server (Vite)  
+`npm run start`  
+Opens at `http://localhost:3003` (or the port Vite assigns).
 
-Run `npm run build` to build the application into an output directory.
+3) Production build  
+`npm run build`
 
-## Running unit tests
+4) Preview the build output  
+`npm run preview`
 
-Run `npm test` to execute the unit tests via [Vitest](https://vitest.dev/). Runs all `.test.tsx` files under `./src` folder.
+Testing & linting
+-----------------
+- Unit tests: `npm run test`
+- Lint: `npm run lint`
 
-## Running code style checks
+Project structure (key paths)
+-----------------------------
+- `src/main.tsx`: Entry point, router initialization, service worker registration.
+- `src/app/app.tsx`: Layout shell with navbar and routed outlet.
+- `src/app/app-routes.tsx`: Route definitions (redirect + support page).
+- `src/app/support/support.tsx`: Pie chart and grid using Ignite UI components.
+- `public/static-data`: Mock datasets consumed by hooks.
+- `public/manifest.webmanifest`, `public/icons/`: PWA manifest and installable icons.
+- `public/service-worker.js`: Cache-first service worker.
+- `vite.config.ts`: Vite configuration.
 
-Run `npm run lint` to execute the code styling rules for the project.
+PWA notes
+---------
+- Serve over HTTPS to enable installation and offline caching.
+- The service worker caches navigation requests and static assets; update `CACHE_NAME` in `public/service-worker.js` when you change caching behavior.
+- Adjust `import.meta.env.VITE_BASENAME` if hosting under a subpath.
 
-## Licensing
-
-See the [License FAQ and Installation documentation](https://www.infragistics.com/products/ignite-ui-react/react/components/general-licensing) for information on how to upgrade to the full licensed package, if the project is using a Trial version of Ignite UI for React, and how to setup your environment and CI to use our licensed npm feed.
-
-If you're downloading the project as a .zip file, you still need to follow the steps in the License FAQ to configure access to the licensed feed before installing dependencies.
-
-Alternatively run `npm run infragistics-login` for a guided login to our licensed feed.
-
-## Additional resources
-
-- [Ignite UI for React](https://www.infragistics.com/products/ignite-ui-react) - to learn more about the product or to dive into component specifics and showcases.
+Deployment tips
+---------------
+- Build with `npm run build`; deploy the `dist/` folder to your static host/CDN.
+- If your environment requires licensed Ignite UI packages, run `npm run infragistics-login` to authenticate against the licensed feed.
