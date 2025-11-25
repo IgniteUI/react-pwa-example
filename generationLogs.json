@@ -1,0 +1,24 @@
+[
+  {
+    "Message": "Component '' with id '93a7c77a-a126-468a-92bb-11b2f1e8d5b0' has no tag, no content and no children. Nothing generated.",
+    "Level": "Error",
+    "Reason": "NotFound",
+    "Category": "Component",
+    "Context": {
+      "ComponentId": "93a7c77a-a126-468a-92bb-11b2f1e8d5b0",
+      "ViewId": "a48f4eae-2a61-42b1-a152-257c134a803d"
+    },
+    "UTCTimestamp": "2025-11-24T15:45:56.6776902Z"
+  },
+  {
+    "Message": "Component '' with id 'd6d1c3f6-06c0-473f-8cf9-8480e5f885f8' has no tag, no content and no children. Nothing generated.",
+    "Level": "Error",
+    "Reason": "NotFound",
+    "Category": "Component",
+    "Context": {
+      "ComponentId": "d6d1c3f6-06c0-473f-8cf9-8480e5f885f8",
+      "ViewId": "a48f4eae-2a61-42b1-a152-257c134a803d"
+    },
+    "UTCTimestamp": "2025-11-24T15:45:56.6778472Z"
+  }
+]
