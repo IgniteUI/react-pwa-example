@@ -3,6 +3,8 @@ React PWA Dashboard (Ignite UI)
 
 Modern React PWA dashboard built with Ignite UI for React (data grid + pie chart), Vite, and React Router. The sample now includes a manifest, installable icons, and a cache-first service worker for basic offline support.
 
+Live application - https://igniteui.github.io/react-pwa-example
+
 This project was generated with [App Builder Code Gen](https://www.appbuilder.dev/platform).
 
 What's inside

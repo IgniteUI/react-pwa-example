@@ -1,10 +1,11 @@
-const CACHE_NAME = 'react-pwa-cache-v1';
-const OFFLINE_URL = '/';
+const CACHE_NAME = 'react-pwa-cache-v2';
+const BASE_URL = self.registration.scope.replace(/\/$/, '');
+const OFFLINE_URL = `${BASE_URL}/`;
 const PRE_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.webmanifest',
-  '/favicon.png'
+  `${BASE_URL}/`,
+  `${BASE_URL}/index.html`,
+  `${BASE_URL}/manifest.webmanifest`,
+  `${BASE_URL}/favicon.png`
 ];
 
 self.addEventListener('install', event => {
