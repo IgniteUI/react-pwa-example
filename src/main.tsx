@@ -27,3 +27,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 )
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    const swUrl = `${import.meta.env.BASE_URL || '/'}service-worker.js`;
+    navigator.serviceWorker.register(swUrl).catch((error) => {
+      // eslint-disable-next-line no-console
+      console.error('Service worker registration failed:', error);
+    });
+  });
+}
