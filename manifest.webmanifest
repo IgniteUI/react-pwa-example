@@ -6,6 +6,13 @@
   "scope": "/react-pwa-example/",
   "display": "standalone",
   "theme_color": "#11315b",
-  "background_color": "#0b1930"
-
+  "background_color": "#0b1930",
+  "icons": [
+    {
+      "src": "/react-pwa-example/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
