@@ -43,7 +43,7 @@
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "test": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "infragistics-login": "echo \"IMPORTANT: When prompted for username enter in this format `name!!domain.com`\" && npm adduser --registry=https://packages.infragistics.com/npm/js-licensed/ --scope=@infragistics --always-auth"
   },
   "browserslist": [
