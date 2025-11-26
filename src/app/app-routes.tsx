@@ -1,7 +1,15 @@
-import { redirect } from 'react-router-dom';
-import Support from './support/support';
+import React, { lazy, Suspense } from 'react';
+
+const Support = lazy(() => import('./support/support'));
 
 export const routes = [
-  { index: true, element: <Support />, text: 'Support' },
-  //{ path: 'support', element: <Support />, text: 'Support' }
+  {
+    index: true,
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Support />
+      </Suspense>
+    ),
+    text: 'Support'
+  },
 ];
