@@ -26,7 +26,8 @@ export default function Support() {
                     <span>Tickets by Priority</span>
                   </p>
                   <div className={classes("group_4")}>
-                    <IgrPieChart dataSource={financialBoxOfficeRevenue} labelMemberPath="Franchise" valueMemberPath="TotalWorldBoxOfficeRevenue"></IgrPieChart>
+                    <IgrPieChart dataSource={financialBoxOfficeRevenue} labelMemberPath="Franchise" valueMemberPath="TotalWorldBoxOfficeRevenue" width="100%" height="100%" >
+                    </IgrPieChart>
                   </div>
                 </div>
               </div>

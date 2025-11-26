@@ -2,14 +2,14 @@
   "name": "React PWA Dashboard",
   "short_name": "React PWA",
   "description": "Installable React dashboard using Ignite UI grid and charts.",
-  "start_url": "/react-pwa-example/",
-  "scope": "/react-pwa-example/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#11315b",
   "background_color": "#0b1930",
   "icons": [
     {
-      "src": "/react-pwa-example/icons/icon-256x256.png",
+      "src": "icons/icon-256x256.png",
       "sizes": "256x256",
       "type": "image/png",
       "purpose": "any maskable"
